@@ -5,8 +5,9 @@ import {
   useFonts, 
 } from '@expo-google-fonts/roboto';
 
+import { Routes } from './src/routes';
+
 import { Loading } from './src/components/Loading';
-import { SignIn } from './src/screens/SignIn';
 
 import { THEME } from './src/styles/theme';
 
@@ -24,7 +25,7 @@ export default function App() {
         backgroundColor="transparent"
       />
 
-      { fontsLoaded ? <SignIn /> : <Loading />}
+      { fontsLoaded ? <Routes /> : <Loading />}
     </NativeBaseProvider>
   );
 }
