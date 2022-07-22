@@ -159,11 +159,12 @@ export function Details() {
 
       {
         order.status === 'open' &&
-        <Button
-          m={5}
-          title="Encerrar solicitação"
-          onPress={handleCloseOrder}
-        />
+        <Box m={5}>
+          <Button
+            title="Encerrar solicitação"
+            onPress={handleCloseOrder}
+          />
+        </Box>
       }
     </VStack>
   );
